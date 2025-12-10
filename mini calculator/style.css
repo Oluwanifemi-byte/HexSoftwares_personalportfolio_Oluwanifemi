@@ -1,0 +1,81 @@
+/* ---------- GENERAL LAYOUT ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    font-family: "Poppins", sans-serif;
+    transition: background 0.3s ease;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+    --background: #f3f4f7;
+    --box-bg: #ffffff;
+    --accent: #4a9eff; /* your theme color */
+    --text: #222;
+}
+
+.dark-mode {
+    --background: #121212;
+    --box-bg: #1e1e1e;
+    --text: #e6e6e6;
+}
+
+/* ---------- CENTER WRAPPER ---------- */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* ---------- CALCULATOR / CARD BOX ---------- */
+.calculator-box {
+    background: var(--box-bg);
+    width: 320px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    color: var(--text);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover animation */
+.calculator-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* ---------- INPUT STYLING ---------- */
+.calculator-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* ---------- BUTTON ---------- */
+.calculator-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: var(--accent);
+    color: #fff;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.calculator-box button:hover {
+    opacity: 0.85;
+}
